@@ -1,7 +1,23 @@
+a:link {
+	color: #777;
+}
+a:link {
+	color: #777;
+}
+
+
+:root {
+	--link-color: #777;
+	--active-link-color: #685454;
+	--hover-link-color: #685454;
+	--visited-color: #777;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 div {
@@ -13,7 +29,7 @@ div {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    
     gap: 20px;
     margin: 0 auto;
     padding: 0 20px;
@@ -42,6 +58,25 @@ div {
 .h-menu__link {
     padding: 0 10px;
     text-decoration: none;
-    
-    
+    color: var(--link-color);
+}
+
+.h-menu__link:hover {
+    color: var(--hover-link-color);
+    text-decoration: underline;
+}
+
+main {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 1140px;
+}
+.output {
+    padding: 30px;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.test {
+    height: 100px;
 }
